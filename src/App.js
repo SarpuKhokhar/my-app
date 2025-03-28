@@ -37,11 +37,13 @@ function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Routes>
-          {localStorageNavOptions.map((item) => (
-            <Route key={item.id} path={item.path} element={item.element} />
-          ))}
-        </Routes>
+        <div className="app-container">
+          <Routes>
+            {localStorageNavOptions.map((item) => (
+              <Route key={item.id} path={item.path} element={item.element} />
+            ))}
+          </Routes>
+        </div>
       </Layout>
       <ToastContainer autoClose={3000} />
     </BrowserRouter>

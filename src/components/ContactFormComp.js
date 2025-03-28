@@ -152,7 +152,7 @@ export const ContactFormComp = () => {
 
           <div className="mt-10 lg:mt-0">
             <div className="lg:flex">
-              <div className="lg:mt-5 lg:w-1/2">
+              <div className="lg:mt-5 lg:w-1/2 right-4">
                 <InputTextComp
                   label={i18next.t("First")}
                   value={first}
